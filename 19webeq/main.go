@@ -22,6 +22,7 @@ func main() {
 	defer response.Body.Close()
 
 	dataBytes, err := ioutil.ReadAll(response.Body)
+
 	if err != nil {
 		panic(err)
 	}

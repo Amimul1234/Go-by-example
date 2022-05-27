@@ -18,4 +18,17 @@ func main() {
 	fmt.Println(result.Path)
 	fmt.Println(result.RawQuery)
 	fmt.Println(result.Port())
+
+	qparams := result.Query()
+	fmt.Println(qparams)
+
+	partsOfUrl := &url.URL{
+		Scheme:  "https",
+		Host:    "lco.dev",
+		Path:    "/tutcss",
+		RawPath: "user=hitesh",
+	}
+
+	anotherUrl := partsOfUrl.String()
+	fmt.Println(anotherUrl)
 }
