@@ -69,7 +69,7 @@ func performPostFromRequest() {
 }
 
 func main() {
-	//PerformGetRequest()
-	//performPostJsonRequest()
+	PerformGetRequest()
+	performPostJsonRequest()
 	performPostFromRequest()
 }
