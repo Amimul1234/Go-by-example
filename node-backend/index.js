@@ -10,9 +10,8 @@ app.get('/', (req, res) => {
 })
 
 app.get('/get', (req, res) => {
-    res.status(200).json({message: "Hello from learnCodeonline.in"})
+    res.status(200).json({message: "Hello from learn code online.in"})
 })
-
 
 app.post('/post', (req, res) => {
     let myJson = req.body;      // your JSON
@@ -23,7 +22,6 @@ app.post('/post', (req, res) => {
 app.post('/postform', (req, res) => {
     res.status(200).send(JSON.stringify(req.body));
 })
-
 
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)
